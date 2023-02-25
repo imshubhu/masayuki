@@ -53,8 +53,8 @@ export default function Main() {
 
   return (
     <>
-      <div style={{ background: '#FFEBCD' }}>
-        <div style={{ display: "flex", justifyContent: 'space-between', background: '#e6e5ff' }}>
+      <div style={{ background: '#cbc2b6' }}>
+        <div style={{ display: "flex", justifyContent: 'space-between', background: '#ffffff' }}>
           <img src="/masayuki.jpeg" alt="logo" width="100px" />
           <h1>Masayuki</h1>
           <span></span>
@@ -117,7 +117,7 @@ export default function Main() {
                India 395007
             </p>
           </div>
-          <Typography color="textSecondary" component="p" variant="caption" gutterBottom={false} style={{ color: '#fff' }}>© 2023 Zyanna All rights reserved.</Typography>
+          <Typography color="textSecondary" component="p" variant="caption" gutterBottom={false} style={{ color: '#fff' }}>© 2023 Masayuki All rights reserved.</Typography>
         </Box>
       </footer>
     </>
