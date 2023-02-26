@@ -56,8 +56,8 @@ export default function Main() {
       <div style={{ background: '#cbc2b6' }}>
         <div style={{ display: "flex", justifyContent: 'space-between', background: '#ffffff' }}>
           <span></span>
-          <div>
-            <img src="/masayuki.jpeg" alt="logo" width="100px" />
+          <div className="header-icon">
+            <img src="/masayuki.jpeg" alt="logo" width="150px" />
             <h1>A new way of living….</h1>
           </div>
           <span></span>
@@ -109,8 +109,8 @@ export default function Main() {
         <Box display="flex" flexWrap="wrap" alignItems="center" style={{ margin: '0 30px', justifyContent: 'space-between' }}>
           {/* <img src="/masayuki.jpeg" alt="logo" width="100px" /> */}
           <span></span>
-          <div>
-            <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1em'}}>
+          <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1em'}}>
+            <div >
               <h4>CONTACT US</h4>
               <p>9909918718</p>
               <p>9979681000</p>
