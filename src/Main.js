@@ -58,7 +58,7 @@ export default function Main() {
           <span></span>
           <div className="header-icon">
             <img src="/masayuki.jpeg" alt="logo" width="150px" />
-            <h1>A new way of living….</h1>
+            <h4>A new way of living….</h4>
           </div>
           <span></span>
         </div>
