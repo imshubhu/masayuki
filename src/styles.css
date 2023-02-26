@@ -17,3 +17,20 @@
     margin: 0;
     margin-bottom: 0.5em
   }
+  .bottom-navigation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em
+  }
+
+  @media (min-width:320px)  {
+    .bottom-navigation{
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (min-width:480px)  { 
+    .bottom-navigation{
+      grid-template-columns: 1fr;
+    }
+  }
