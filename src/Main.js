@@ -64,7 +64,7 @@ export default function Main() {
         </div>
         <Container >
           <Box sx={{ width: "auto", height: "auto" }}>
-            <ImageList variant="masonry" cols={3} gap={8}>
+            <ImageList variant="masonry" cols={ window.innerWidth > 425 ? 3 : 2} gap={8}>
               {data &&
                 data.map((item) => (
                   <ImageListItem key={item._id}>
