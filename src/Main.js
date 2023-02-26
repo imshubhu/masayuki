@@ -109,7 +109,7 @@ export default function Main() {
         <Box display="flex" flexWrap="wrap" alignItems="center" style={{ margin: '0 30px', justifyContent: 'space-between' }}>
           {/* <img src="/masayuki.jpeg" alt="logo" width="100px" /> */}
           <span></span>
-          <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1em'}}>
+          <div className="bottom-navigation">
             <div >
               <h4>CONTACT US</h4>
               <p>9909918718</p>
