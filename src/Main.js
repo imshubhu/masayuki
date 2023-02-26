@@ -55,8 +55,11 @@ export default function Main() {
     <>
       <div style={{ background: '#cbc2b6' }}>
         <div style={{ display: "flex", justifyContent: 'space-between', background: '#ffffff' }}>
-          <img src="/masayuki.jpeg" alt="logo" width="100px" />
-          <h1>Masayuki</h1>
+          <span></span>
+          <div>
+            <img src="/masayuki.jpeg" alt="logo" width="100px" />
+            <h1>A new way of living….</h1>
+          </div>
           <span></span>
         </div>
         <Container >
@@ -104,20 +107,26 @@ export default function Main() {
       </div>
       <footer style={{ background: '#000', color: '#fff' }}>
         <Box display="flex" flexWrap="wrap" alignItems="center" style={{ margin: '0 30px', justifyContent: 'space-between' }}>
-          <img src="/masayuki.jpeg" alt="logo" width="100px" />
+          {/* <img src="/masayuki.jpeg" alt="logo" width="100px" /> */}
+          <span></span>
           <div>
-            <h4>CONTACT US</h4>
-            <p>9909918718</p>
-            <p>9979681000</p>
-            <p>masayuki.enterprise@gmail.com</p>
-            <p>MASAYUKI
-               BASMENT ROOM NO 3
-               SAFAL SQUARE OPP PRIME SHOPER VESU
-               SURAT GUJRAT
-               India 395007
-            </p>
+            <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1em'}}>
+              <h4>CONTACT US</h4>
+              <p>9909918718</p>
+              <p>9979681000</p>
+              <p>masayuki.enterprise@gmail.com</p>
+            </div>
+            <div>
+              <h4>Address</h4>
+              <p>MASAYUKI</p>
+              <p>BASMENT ROOM NO 3</p>
+              <p>SAFAL SQUARE OPP PRIME SHOPER VESU </p>
+              <p>SURAT GUJRAT</p>
+              <p>India 395007</p>
+            </div>
           </div>
-          <Typography color="textSecondary" component="p" variant="caption" gutterBottom={false} style={{ color: '#fff' }}>© 2023 Masayuki All rights reserved.</Typography>
+          <span></span>
+          {/* <Typography color="textSecondary" component="p" variant="caption" gutterBottom={false} style={{ color: '#fff' }}>© 2023 Masayuki All rights reserved.</Typography> */}
         </Box>
       </footer>
     </>
