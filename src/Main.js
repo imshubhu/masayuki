@@ -113,7 +113,7 @@ export default function Main() {
             <div >
               <h4>CONTACT US</h4>
               <p>9909918718</p>
-              <p>9979681000</p>
+             {/* <p>9979681000</p> */}
               <p>masayuki.enterprise@gmail.com</p>
             </div>
             <div>
