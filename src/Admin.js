@@ -148,7 +148,7 @@ export default function Admin() {
                           <Stack key={i} direction="row" spacing={2}>
                             {" "}
                             <img
-                              src={`https://masayuki-backend-production.up.railway.app/${f.filename}`}
+                              src={`https://masayuki.onrender.com/${f.filename}`}
                               width={"100px"}
                               alt={f.filename}
                             />{" "}
