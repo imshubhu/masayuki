@@ -28,10 +28,10 @@ export default function Admin() {
       return 
     }
     for (let i = 0; i < event.target.files.length; i++) {
-      form.append("image", event.target.files[i]);
+      form.append("images", event.target.files[i]);
     }
     const res = await axios.post(
-      "https://masayuki.onrender.com/uploadProfilePicture",
+      "https://www.azui.io:5000/api/v1/auth/uploadImages2",
       form
     );
     if (res.data.success) {
@@ -44,7 +44,7 @@ export default function Admin() {
 
   const getData = async () => {
     const res = await axios.get(
-      "https://masayuki.onrender.com/getImages"
+      "https://www.azui.io:5000/api/v1/auth/getImages2"
     );
     if (res.data.success) {
       setData(res.data.data);
@@ -148,9 +148,9 @@ export default function Admin() {
                           <Stack key={i} direction="row" spacing={2}>
                             {" "}
                             <img
-                              src={`https://masayuki.onrender.com/${f.filename}`}
+                              src={`https://www.azui.io:5000/uploads/${f}`}
                               width={"100px"}
-                              alt={f.filename}
+                              alt={f}
                             />{" "}
                           </Stack>
                         ))}{" "}
