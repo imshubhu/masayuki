@@ -39,7 +39,7 @@ export default function Main() {
 
   const getData = async () => {
     const res = await axios.get(
-      "https://masayuki.onrender.com/getImages"
+      "https://www.azui.io:5000/api/v1/auth/getImages2"
     );
     console.log("res", res.data);
     if (res.data.success) {
@@ -71,8 +71,8 @@ export default function Main() {
                     {
                       item.images.length > 0 &&
                       <img
-                        src={`https://masayuki.onrender.com/${item.images[0].filename}`}
-                        srcSet={`https://masayuki.onrender.com/${item.images[0].filename}`}
+                        src={`https://www.azui.io:5000/uploads/${item.images[0]}`}
+                        srcSet={`https://www.azui.io:5000/uploads/${item.images[0]}`}
                         alt={item.title}
                         loading="lazy"
                         onClick={() => handleOpen(item.images)}
@@ -95,8 +95,8 @@ export default function Main() {
                     <div key={i}>
                       <img
                         loading="lazy"
-                        src={`https://masayuki.onrender.com/${e.filename}`}
-                        alt={e.filename}
+                        src={`https://www.azui.io:5000/uploads/${e}`}
+                        alt={e}
                       />
                     </div>
                   ))}
