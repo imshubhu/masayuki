@@ -39,7 +39,7 @@ export default function Main() {
 
   const getData = async () => {
     const res = await axios.get(
-      "https://masayuki-backend-production.up.railway.app/getImages"
+      "https://masayuki.onrender.com/getImages"
     );
     console.log("res", res.data);
     if (res.data.success) {
@@ -71,8 +71,8 @@ export default function Main() {
                     {
                       item.images.length > 0 &&
                       <img
-                        src={`https://masayuki-backend-production.up.railway.app/${item.images[0].filename}`}
-                        srcSet={`https://masayuki-backend-production.up.railway.app/${item.images[0].filename}`}
+                        src={`https://masayuki.onrender.com/${item.images[0].filename}`}
+                        srcSet={`https://masayuki.onrender.com/${item.images[0].filename}`}
                         alt={item.title}
                         loading="lazy"
                         onClick={() => handleOpen(item.images)}
@@ -95,7 +95,7 @@ export default function Main() {
                     <div key={i}>
                       <img
                         loading="lazy"
-                        src={`https://masayuki-backend-production.up.railway.app/${e.filename}`}
+                        src={`https://masayuki.onrender.com/${e.filename}`}
                         alt={e.filename}
                       />
                     </div>
