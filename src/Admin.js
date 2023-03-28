@@ -31,7 +31,7 @@ export default function Admin() {
       form.append("image", event.target.files[i]);
     }
     const res = await axios.post(
-      "https://masayuki-backend-production.up.railway.app/uploadProfilePicture",
+      "https://masayuki.onrender.com/uploadProfilePicture",
       form
     );
     if (res.data.success) {
@@ -44,7 +44,7 @@ export default function Admin() {
 
   const getData = async () => {
     const res = await axios.get(
-      "https://masayuki-backend-production.up.railway.app/getImages"
+      "https://masayuki.onrender.com/getImages"
     );
     if (res.data.success) {
       setData(res.data.data);
@@ -57,7 +57,7 @@ export default function Admin() {
 
   const deleteData = async (id) => {
     const res = await axios.get(
-      `https://masayuki-backend-production.up.railway.app/delete?id=${id}`
+      `https://masayuki.onrender.com/delete?id=${id}`
     );
     console.log("data", res.data);
     if (res.data.success) {
